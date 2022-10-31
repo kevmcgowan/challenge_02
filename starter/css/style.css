@@ -11,6 +11,7 @@ html, body {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     line-height: 1.5;
+    color: #555;
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px auto 50px; */
@@ -29,8 +30,15 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #555;
-    color: #fff;
+    color: #555;
     align-items: center;
+}
+button {
+    background-color: rgb(70, 183, 166);
+}
+logo {
+    color: #555;
+    
 }
 
 header nav {
@@ -78,6 +86,8 @@ main section, footer {
 .about {
     display: flex;
     height: 200px;
+    background-image: url(../images/02-portfolio-1.jpg);
+    background-repeat: no-repeat;;
     /* grid-column:  1/4; */
 }
 .about p {
@@ -91,6 +101,7 @@ main section, footer {
     display: flex;
     height: 200px;
     width: 1500px;
+    background-image: url(../images/02-portfolio-1.jpg);
 }
 .work p {
     margin-left: 500px;
