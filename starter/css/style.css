@@ -11,16 +11,16 @@ html, body {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     line-height: 1.5;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 50px auto 50px; */
 }
 
 a {
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 5px;
-    justify-self: baseline;
+    /* justify-self: baseline; */
 }
 
 header {
@@ -47,20 +47,21 @@ header nav a:hover {
 /*header .left-section > */
 
 main {
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 2fr 3fr; */
 }
-main section {
-    background-color: lightseagreen;
+main section, footer {
+    background-color: white;
      padding: 15px;
      border: 3px solid black;
 }
 
 .hero-image {
-    display: grid;
-    grid-column: 1 /4;
+    /* display: grid;
+    grid-column: 1 /4; */
     background-image: url("../images/02-hero-bg.jpg");
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -75,34 +76,48 @@ main section {
     color: white;
 }
 .about {
-    display: grid;
-    grid-column:  1/2;
+    display: flex;
+    height: 200px;
+    /* grid-column:  1/4; */
 }
 .about p {
-    display: grid;
+    margin-left: 500px;
+    /* display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column: span 2 / 4;
-    border-left: 10px;
+    border-left: 10px; */
 }
 .work {
-    display: grid;
-    grid-column: 1/4;
+    display: flex;
+    height: 200px;
+    width: 1500px;
+}
+.work p {
+    margin-left: 500px;
 }
 
 footer {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
     align-items: center;
-    grid-template-columns: 1fr 2fr;
-    background-color: white;
+    /* grid-template-columns: 1fr 2fr; */
+    /* background-color: white; */
     color: #000;
 }
 footer nav {
-    justify-self: center;
+    width: 100%;
+    margin-left: 500px;
+    display: flex;
 }
 
+footer h2 {
+    margin-left: 10px;
+}
 footer nav a {
+    width: max-content;
     color: black;
     margin: 30px;
 }
