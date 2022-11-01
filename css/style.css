@@ -12,6 +12,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     line-height: 1.5;
     color: #555;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
    grid-template-rows: 100px auto 100px;
@@ -34,7 +35,6 @@ header {
     align-items: center;
 }
 
-/*header .left-section > */
 button {
     background-color: rgb(70, 183, 166);
     size: 90px;
@@ -51,6 +51,7 @@ button {
     /* size: 80px; */
 
  }
+
 header nav {
     justify-self: flex-end;
 }
@@ -62,7 +63,6 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
-
 
 main {
     grid-column: 1 / 3;
@@ -88,6 +88,7 @@ main section {
     background-size: cover;
     position: relative;
     grid-gap: 1.25rem;
+
 }
 
 .hero-text {
@@ -149,6 +150,7 @@ footer h2 {
     color: #555;
 }
 footer nav a {
+
     color: black;
     margin: 30px;
 }
