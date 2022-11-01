@@ -12,9 +12,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     line-height: 1.5;
     color: #555;
-    /* display: grid;
+
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto 50px; */
+   grid-template-rows: 100px auto 100px;
 }
 
 a {
@@ -33,13 +34,23 @@ header {
     color: #555;
     align-items: center;
 }
+
 button {
     background-color: rgb(70, 183, 166);
-}
-logo {
-    color: #555;
-    
-}
+    size: 90px;
+    margin: 5px;
+    padding: 20px;
+ }
+
+/* logo {
+    size: 90px;
+} */
+
+ logo h1 {
+    color:#555;
+    /* size: 80px; */
+
+ }
 
 header nav {
     justify-self: flex-end;
@@ -52,27 +63,32 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
-/*header .left-section > */
 
 main {
-    /* grid-column: 1 / 3;
+    grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr; */
+    grid-template-columns: 1fr 2fr 3fr;
 }
-main section, footer {
-    background-color: white;
-     padding: 15px;
-     border: 3px solid black;
+
+h2 {
+    align-self: center;
+}
+
+main section {
+    background-color: lightseagreen;
+    padding: 15px;
+    border: 3px solid black;
 }
 
 .hero-image {
-    /* display: grid;
-    grid-column: 1 /4; */
+    display: grid;
+    grid-column: 1 /4;
     background-image: url("../images/02-hero-bg.jpg");
-    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    grid-gap: 1.25rem;
+
 }
 
 .hero-text {
@@ -80,57 +96,61 @@ main section, footer {
     justify-self: flex-end;
     position:absolute;
     top: 80%;
-    right: 1%;
+    right: 2%;
     color: white;
 }
 .about {
-    display: flex;
-    height: 200px;
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 25% / 75%;
     background-image: url(../images/harley-davidson-breakout-picture-gallery-10399.jpeg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;;
-    /* grid-column:  1/4; */
+    background-repeat: no-repeat;
+    grid-gap: 1.25rem;
 }
 .about p {
-    margin-left: 500px;
-    /* display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column: span 2 / 4;
-    border-left: 10px; */
-}
-.work {
-    display: flex;
-    height: 200px;
-    width: 1500px;
-    background-image: url(../images/02-portfolio-1.jpg);
-}
-.work p {
-    margin-left: 500px;
+    display: grid;
+    grid-column: 2 / 4;
+    border-left: 10px;
+    border-color: #fff;
 }
 
+.work {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 25% / 75%;
+    background-image: url(../images/02-portfolio-2.jpg);
+    grid-gap: 1.25rem;
+}
+
+.work p {
+    display: grid;
+    grid-column: 2 / 4;
+    border-left: 10px;
+    border-color: #fff;
+}
 footer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* grid-column-start: 1; */
-    /* grid-column-end: 3; */
+    display: grid;
+    grid-column: 1/4;
     align-items: center;
-    /* grid-template-columns: 1fr 2fr; */
-    /* background-color: white; */
-    color: #000;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    color: #0000
+}
+
+.contact me {
+    color: black;
 }
 footer nav {
-    width: 100%;
-    margin-left: 500px;
-    display: flex;
+    justify-self: center;
 }
 
 footer h2 {
     margin-left: 10px;
+    color: #555;
 }
 footer nav a {
-    width: max-content;
+
     color: black;
     margin: 30px;
 }
